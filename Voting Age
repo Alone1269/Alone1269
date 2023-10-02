@@ -4,7 +4,7 @@ int main ()
 {
     printf("\n\nType your age for know can you capable for voting !\n\n");
 
-    float age , z;
+    float age , result ;
     int voteingAge = 18;
 
     printf("Type your age for know can you capable for voting :");
@@ -18,9 +18,9 @@ int main ()
     else
 
         {
-            z= voteingAge - age;
+            result= voteingAge - age;
 
-            printf("\n\n\nYou are not capable for voting ! You are capable after :%f year/month !\n\n",z);
+            printf("\n\n\nYou are not capable for voting ! You are capable after :%.2f year.month !\n\n",result);
         }
 
     return 0;
