@@ -13,7 +13,5 @@ int main() {
 
  printf("\n\nYour result is : %d ",z);
 
-
-   // Returns 1 (true) because 10 is greater than 9
   return 0;
 }
