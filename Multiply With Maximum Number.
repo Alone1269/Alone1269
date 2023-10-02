@@ -2,7 +2,7 @@
 
 int main()
 {
-printf("Try to find out Maximum !");
+printf("Try to find out Maximum WITH 3 CANDLE MULTIPLY!");
 int a,b,c,x,y,z;
 
 printf("\n\nType Number for a : ");
@@ -36,5 +36,4 @@ else
 }
 return 0;
 }
-
 
