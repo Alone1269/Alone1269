@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
- int
-main ()
+#include <math.h>
+ int main()
+
 {
 
 char operator[10];
@@ -14,9 +15,13 @@ double b;
 double result;
 
 
-        printf("Hello dear! I'm joy From Mirpur ! i try to make a calculator So now you can just useing \n (+ , - , * , / , evenodd , mixmum) Thats it ! I will try my best for Add now Mathmatic\n\n\n");
-        printf("\nType what do you want (+ - * / %) Or EvenOdd (evenodd) Or Mixmum (mixmum)  : ");
+    printf("\n    HELLO DEAR ! THIS IS JOY CHANDRA DAS AND THIS IS MY FIRST PROJECT ! I MADE A CALCULATOR AND ADDED SOME FEATURES ALREADY !! STILL UPDATING.....  \n\n\n");
 
+    printf(" TYPE WHAT YOU WANT ......!\n\n FOR ADDITION     : (+) \n\n FOR SUBTRACTION  : (-) \n\n FOR MULTIPLY     : (*) \n\n FOR DIVIDE       : (/) \n\n FOR MODULUS      : (modulus) \n\n FOR EVENODD      : (evenodd) \n\n FOR MIXMUM       : (mixmum) \n\n ");
+
+    printf("\n\nEXAMPLE : SUPPOES YOU WANT ADDITION THEN TYPE ONLY + THEN GO NEXT STEP AND ADD YOUR VALUE\n\n");
+
+        printf("NOW TYPE YOUR : ");
         scanf ("%s", operator);
 
 
@@ -37,6 +42,7 @@ double result;
             result = a + b;
 
             printf ("\n\nYour Addition is : %0.2f\n\n\n", result);
+            printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
 
         }
 
@@ -47,6 +53,7 @@ double result;
             result = abs(a - b);
 
             printf ("\n\nYour Subtraction is : %0.2f\n\n\n", result);
+            printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
 
         }
 
@@ -57,6 +64,7 @@ double result;
             result = a * b;
 
             printf ("\n\nYour Multiplication is : %0.2f\n\n\n", result);
+            printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
 
         }
 
@@ -67,20 +75,34 @@ double result;
             result = a / b;
 
             printf ("\n\nYour Division is : %f\n\n\n", result);
+            printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
 
         }
-    else if (strcmp(operator,"%")==0)
+    else if (strcmp(operator,"modulus")==0)
         {
-
-            if(b>0)
+            if((int)a == a && (int)b ==b )
+            {
+                if(b>0)
                 {
-                    result=(int)a%b;
-                    printf("%lf",result);
+
+                    int result=(int) a % (int) b;
+                    printf("\n\n YOUR MODULUS ANSWER IS : %d",result);
+                    printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
+
                 }
-            else
+
+                else
                 {
                     printf("Math error");
                 }
+            }
+            else
+            {
+                printf("Are you mad bro ? Type integer Value if you want do modulus ");
+            }
+
+
+
         }
 
     else if (strcmp (operator, "evenodd") == 0)
@@ -119,6 +141,7 @@ double result;
                                 printf ("\n\n\nYour number %0.2f is an Odd number\n\n\n", b);
 
                             }
+                            printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
 
                 }
 
@@ -132,15 +155,17 @@ double result;
                 {
                     printf("\n\n\nThe number %f is mixmum than %f So we can see B big mixmum!\n\n\n",b,a);
                 }
+            printf("\nTHANKS FOR COMING ! SEE YOU SOON :) \n");
         }
 
   else
 
     {
 
-    printf("\n\nYOU NOUGHT BOY :)!! \n\n %s IS NOT VALID! PLEASE FIRSTLY TYPE (+ - * /) Or EvenOdd (KEY :evenodd) Or Mixmum (KEY :mixmum)\n PLEASE TRY AGAIN !\n",
+    printf("\n\nYOU NOUGHT BOY :) !! \n\n ' %s ' IS NOT VALID! PLEASE FOLLOW THE ROULS : \n",
 	 operator);
-
+	printf("\nTYPE WHAT YOU WANT ......!\n\n FOR ADDITION     : (+) \n\n FOR SUBTRACTION  : (-) \n\n FOR MULTIPLY     : (*) \n\n FOR DIVIDE       : (/) \n\n FOR MODULUS      : (modulus) \n\n FOR EVENODD      : (evenodd) \n\n FOR MIXMUM       : (mixmum) \n\n ");
+    printf("\n\nEXAMPLE : SUPPOES YOU WANT ADDITION THEN TYPE ONLY + THEN GO NEXT STEP AND ADD YOUR VALUE !\n\n TRY AGAIN !!\n\n");
 
     }
 
@@ -148,6 +173,5 @@ double result;
     return 0;
 
 }
-
 
 
