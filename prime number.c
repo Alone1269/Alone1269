@@ -6,7 +6,7 @@ int main()
     printf("Type a number for check prime number or not : ");
     scanf("%d",&n);
     
-    if(n <= 1)
+    if(n < 1)
     {
         printf("please Type up to 1 ");
     }
